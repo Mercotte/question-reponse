@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Great Vibes';
+  src: url(GreatVibes-Regular.ttf);
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Great Vibes', cursive;
+  background-color: rgb(226, 242, 244);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #daa520;
+  line-height: 3;
+  font-weight: 300;
+}
+.question {
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  border-radius: 0.5rem;
+  width: 70vh;
+}
+.questions-card {
+  width: 90vw;
+  max-width: 600px;
+}
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.btn-minus,
+.reponse {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.not-show {
+  display: none;
+}
+
+.btn-plus,
+.btn-minus {
+  color: #daa520;
+  border: 1px solid #daa520;
+  padding: 0.3rem;
+  background: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.btn-plus:hover,
+.btn-minus:hover {
+  color: darkred;
+  border: 1px solid darkred;
+  transform: rotate(360deg);
+}
+
+.reponse {
+  border-top: 1px solid grey;
+  padding: 1rem 0;
+}
